@@ -1,0 +1,4 @@
+﻿namespace Preview.DTO
+{
+    
+}
