@@ -1,92 +1,86 @@
-﻿/*namespace ApplicationForm.DTO
+﻿namespace ApplicationForm.DTO
 {
     public class ApplicationDTO
     {
-        public class CoverImg
+        public class CoverImgModel
         {
             public string FileName { get; set; } //  name of uploaded file
             public byte[] FileData { get; set; } //  binary data 
-            public string Description { get; set; } //cover img
         }
         public class PersonalInfoDTO
         {
-            public string f.Name { get; set; }
-            public string l.Name { get; set; }
+            public string firstName { get; set; }
+            public string lastName { get; set; }
             public string email { get; set; }
 
-            public class Phone
+            public class PhoneModel
             {
-                public string InternalText { get; set; }
-                public bool IsEnabled { get; set; } //select or not
                 public string hidebtn { get; set; }
-                public string label { get; set; } //hide
                 public bool IsToggled { get; set; } // hide or not
                 public string ActivateColor { get; set; } //color when activated
-                public bool deactivateColor { get; set; } //color on deactivation
+                public int phoneNumber { get; set; }//object to store mobile number
             }
-            public class Nationality
+            public class NationalityModel
             {
-                public string InternalText { get; set; }
-                public bool IsEnabled { get; set; } //select or not
-                public string hidebtn { get; set; }
-                public string label { get; set; } //hide
-                public bool IsToggled { get; set; } // hide or not
-                public string ActivateColor { get; set; } //color when activated
-                public bool deactivateColor { get; set; } //color on deactivation
+                private string hidebtn { get; set; }
+                private bool IsToggled { get; set; } // hide or not
+                private string ActivateColor { get; set; } //color when activated
+                public string EnterNationality { get; set; }
             }
-            public class CurrentResidence
+            public class CurrentResidenceModel
             {
-                public string InternalText { get; set; }
-                public bool IsEnabled { get; set; } //select or not
-                public string hidebtn { get; set; }
-                public string label { get; set; } //hide
-                public bool IsToggled { get; set; } // hide or not
-                public string ActivateColor { get; set; } //color when activated
-                public bool deactivateColor { get; set; } //color on deactivation
+                private string hidebtn { get; set; }
+                private bool IsToggled { get; set; } // hide or not
+                private string ActivateColor { get; set; } //color when activated
+                public string EnterResidence { get; set; }
+
             }
-            public class idNum
+            public class IDNumModel
             {
-                public string InternalText { get; set; }
-                public bool IsEnabled { get; set; } //select or not
-                public string hidebtn { get; set; }
-                public string label { get; set; } //hide butn
-                public bool IsToggled { get; set; } // hide or not
-                public string ActivateColor { get; set; } //color when activated
-                public bool deactivateColor { get; set; } //color on deactivation
+                private string hidebtn { get; set; }
+                private bool IsToggled { get; set; } // hide or not
+                private string ActivateColor { get; set; } //color when activated
+                public string EnterIdentityNumber { get; set; }
             }
-            public class DoBirth
+            public class DateOfBirthModel
             {
-                public string InternalText { get; set; }
-                public bool IsEnabled { get; set; } //select or not
-                public string Hidebtn { get; set; }
-                public string label { get; set; } //hide
-                public bool IsToggled { get; set; } // hide or not
-                public string ActivateColor { get; set; } //color when activated
-                public bool deactivateColor { get; set; } //color on deactivation
+                private bool IsToggled { get; set; } // hide or not
+                private string ActivateColor { get; set; } //color when activated
+                public DateTime DoB { get; set; }
             }
-            public class Gender
+            public class GenderModel
             {
-                public string InternalText { get; set; }
-                public bool IsEnabled { get; set; } //select or not
-                public string hidebtn { get; set; }
-                public string label { get; set; } //hide butn
-                public bool IsToggled { get; set; } // hide or not
-                public string ActivateColor { get; set; } //color when activated
-                public bool deactivateColor { get; set; } //color on deactivation
+                private bool IsToggled { get; set; } // hide or not
+                private string ActivateColor { get; set; } //color when activated
+                public List<string> Gender { get; set; }
+                public string SelectedGender { get; set; }
+                public GenderModel()
+                {
+                    Gender = new List<string>
+                    {
+                        "Male",
+                        "Female",
+                        "Binary",
+                        "Transgender",
+                        "Others",
+                        "Prefer not to say",
+                    };
+                    SelectedGender = string.Empty;
+                }
             }
             public class AddQuestionDTO
             {
-                public class type
+                public class Type
                 {
                     public string selectedType { get; set; }
                     public list<choose> ProvidedTypes { get; set; } //list of available question types
-                    public type()
+                    public Type()
                     {
                         ProvidedTypes = new list<choose>
-                    {
-                        "paragraph"
-                        "multiple choice"
-                    }
+                        {
+                            "paragraph"
+                            "multiple choice"
+                        }
                     }
                 }
             }
@@ -94,32 +88,29 @@
 
         public class ProfileDTO
         {
-            public class Education
+            public class EducationModel
             {
-                public string Text { get; set; }
-                public bool IsEnabled { get; set; } //select or not
-                public string hidebtn { get; set; }
-                public string label { get; set; } //hide
-                public bool IsToggled { get; set; } // hide or not
-                public string ActivateColor { get; set; } //color when activated
-                public bool deactivateColor { get; set; } //color on deactivation
-                public string ClickAction { get; set; } //action to Education form
+                private bool IsToggled { get; set; } // hide or not
+                private string ActivateColor { get; set; } //color when activated
+                public string mandatorybtn { get; set; } //action to Education form
             }
-            public class EducationForm
+            public class EducationFormModel
             {
                 public string School { get; set; }
                 public class Degree
                 {
                     public List<string> DegreeType { get; set; }
+                    public string SelectedDegree { get; set; }
                     public Degree()
                     {
                         DegreeType = new List<string>
-                    {//degree for showcase
-                        "B.Sc"
-                        "M.Sc"
-                        "HND"
-                        "Associates Degree"
-                    };
+                        {//degree for showcase
+                            "B.Sc",
+                            "M.Sc",
+                            "HND",
+                            "Associates Degree",
+                        };
+                        SelectedDegree = string.Empty;
                     }
                 }
                 public string Course { get; set; }
@@ -129,14 +120,14 @@
                     public StudyLocation()
                     {
                         Country = new List<string>
-                    {//few options for showcase
-                        "USA"
-                        "Nigeria"
-                        "UK"
-                        "Canada"
-                        "Kenya"
-                        "Ghana"
-                    }
+                        {//few options for showcase
+                            "USA",
+                            "Nigeria",
+                            "UK",
+                            "Canada",
+                            "Kenya",
+                            "Ghana",
+                        }
                     }
                 }
                 public class StartEndDate
@@ -145,22 +136,27 @@
                     private DateTime EndDate { get; set; }
                 }
             }
-            public class Experience
+            public class ExperienceModel
             {
                 public string CompanyName { get; set; }
                 public string PostionTitle { get; set; }
+                
+                //Work Location model
                 public class WorkLocation
                 {
-                    public List<string> Location { get; set; }
-                    public WorkLocation()
+                    public int LocationId { get; set; }
+                    public string Name { get; set;}
+                }
+                public class SelectedLocation
+                {
+                    public List<WorkLocation> Locations = new List<WorkLocation>
                     {
-                        Location = new List<string>
-                    {
-                        "Remote"
-                        "Hybrid"
-                        "Physical"
-                    }
-                    }
+                        new WorkLocation {LocationId = 1, Name = "Remote"},
+                        new WorkLocation {LocationId = 2, Name = "Physical"},
+                        new WorkLocation {LocationId = 3, Name = "Hybrid"},
+                    };
+                    public List<WorkLocation> GetCountry()
+                    {return country};
                 }
                 private class StartEndDate
                 {
@@ -173,7 +169,6 @@
             {
                 public string FileName { get; set; } //  name of resume file
                 public byte[] FileData { get; set; } //  binary data 
-                public string Description { get; set; } //resume
 
             }
         }
@@ -197,4 +192,3 @@
         }
     }
 }
-*/

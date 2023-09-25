@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-//using Preview.DTO;
+using System.Linq;
 using ProgramDetails.DTO;
+//using ApplicationForm.DTO;
 
 namespace ProgramDetails.DTO
 {
@@ -37,45 +38,70 @@ namespace ProgramDetails.DTO
             Console.WriteLine($"Prog skills are {programInput.Skills}");
             Console.WriteLine($"Prog Benefits {programInput.Benefits}");
             Console.WriteLine($"Prog Criteria {programInput.AppliCriteria}");
-        
-            //program type
-            Console.WriteLine("Available Programs: ");
-            foreach (string program in programInput.ProgOptions)
-            {
-                Console.WriteLine(program);
-            }
-            string inputProgram = Console.ReadLine(); //select a program
-            if (programInput.ProgOptions.Contains(inputProgram))
-            {
-                programInput.SelectedProgType = inputProgram;
-                Console.WriteLine($"Program: {programInput.ProgOptions}"); //storing value
-            }
-            else{Console.WriteLine("Select a program.")};
 
-            Console.WriteLine("Select the start of your program: ");
-            programInput.ProgStart = Console.ReadLine();
-            Console.WriteLine("Application opens: ");
-            programInput.AppliOpen = Console.ReadLine();
-            Console.WriteLine("Application closes: ");
-            programInput.AppliClose = Console.ReadLine();
+            //program start
+            Console.Write("Program commences: (yyyy/mm/dd)");
+            if(DateTime.TryParse(Console.ReadLine(), out DateTime startProg))
+            {
+                programInput.StartDate = startProg;
+                Console.WriteLine($"Start date: {programInput.StartDate}");
+            }
+            else{Console.Write("Input valid date");}
+
+            //application open
+            Console.Write("Application Open: (yyyy/mm/dd)");
+            if(DateTime.TryParse(Console.ReadLine(), out DateTime openDate))
+            {
+                programInput.ApplicationOpenDate = openDate;
+                Console.WriteLine($"Open date: {programInput.ApplicationOpenDate}");
+            }
+            else{Console.Write("Input valid date");}
+
+            //application close
+            Console.Write("Application closes: (yyyy/mm/dd)");
+            if(DateTime.TryParse(Console.ReadLine(), out DateTime closeDate))
+            {
+                programInput.ApplicationCloseDate = closeDate;
+                Console.WriteLine($"Close date: {programInput.ApplicationCloseDate}");
+            }
+            else{Console.Write("Input valid date");}
+
             Console.WriteLine("Application Duration: ");
-            programInput.Duration = Console.ReadLine();
+            programInput.Duration = Console.WriteLine("6 Months");
             Console.WriteLine("Application Location: ");
-            programInput.Location = Console.ReadLine();
+            programInput.Location = Console.Write(London, UK);
 
-            //selecting qualification
-            Console.WriteLine("Available Programs: ");
-            foreach (string qualify in programInput.QualifyOptions)
+
+            //number of application
+            programInput.MaxNoApplication = Console.WriteLine("20,000");
+
+        }
+    }
+}
+
+namespace ApplicationForm.DTO
+{
+    class App
+    {
+        static void Main(string[] args)
+        {
+            //initialize ApplicationForm.DTO
+            var inputApplication = new ApplicationForm.DTO();
+
+            //cov img upload
+            string fileName = Console.ReadLine();
+            if (!string.IsNullOrWhiteSpace(fileName)) //this method  checks if filename is provided
             {
-                Console.WriteLine(qualify);
+                inputApplication.FileName = fileName;
+                Console.WriteLine($"Image '{inputApplication.FileName}' provided");
             }
-            string inputQualify = Console.ReadLine(); //select a qualification
-            if (programInput.QualifyOptions.Contains(inputQualify))
-            {
-                programInput.SelectedQualification = inputQualify;
-                Console.WriteLine($"Qualification: {programInput.QualifyOptions}"); //storing qualification value
-            }
-            else{Console.WriteLine("Select qualification.")};
+            else{Console.WriteLine("Upload image")};
+
+            //personal informartion
+            inputApplication.firstName = Console.ReadLine();
+            inputApplication.lastName = Console.ReadLine();
+            inputApplication.email = Console.ReadLine();
+
         }
     }
 }
