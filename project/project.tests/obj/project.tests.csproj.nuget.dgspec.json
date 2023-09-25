@@ -12,6 +12,19 @@
         "projectPath": "c:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
         "outputPath": "c:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\obj\\",
+=======
+    "C:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.tests\\project.tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.csproj",
+        "projectName": "project",
+        "projectPath": "C:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\obj\\",
+>>>>>>> 9d3f9ed05bc0745f1900520a7e952678e17fdde0
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -57,14 +70,14 @@
         }
       }
     },
-    "c:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.tests\\project.tests.csproj": {
+    "C:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.tests\\project.tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.tests\\project.tests.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.tests\\project.tests.csproj",
         "projectName": "project.tests",
-        "projectPath": "c:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.tests\\project.tests.csproj",
+        "projectPath": "C:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.tests\\project.tests.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.tests\\obj\\",
+        "outputPath": "C:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -79,8 +92,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.csproj": {
-                "projectPath": "c:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.csproj"
+              "C:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.csproj": {
+                "projectPath": "C:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.csproj"
               }
             }
           }

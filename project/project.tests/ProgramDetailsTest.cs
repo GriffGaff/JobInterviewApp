@@ -1,4 +1,4 @@
-/*using System;
+using System;
 using ProgramDetails.DTO;
 
 namespace project.tests
@@ -21,4 +21,4 @@ namespace project.tests
             var output = $"Title: {Title}\nSummary: {Summary}\nDescription: {Description}\n Skills: {Skills}\nBenefits: {Benefits}\nApplicatio criteria: {AppliCriteria}";
         }
     }
-}*/
+}

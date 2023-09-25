@@ -5532,11 +5532,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "c:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.tests\\project.tests.csproj",
       "projectName": "project.tests",
       "projectPath": "c:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.tests\\project.tests.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
       "outputPath": "c:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.tests\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.tests\\project.tests.csproj",
+      "projectName": "project.tests",
+      "projectPath": "C:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.tests\\project.tests.csproj",
+      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.tests\\obj\\",
+>>>>>>> 9d3f9ed05bc0745f1900520a7e952678e17fdde0
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5551,8 +5559,13 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+<<<<<<< HEAD
             "c:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.csproj": {
               "projectPath": "c:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.csproj"
+=======
+            "C:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.csproj": {
+              "projectPath": "C:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.csproj"
+>>>>>>> 9d3f9ed05bc0745f1900520a7e952678e17fdde0
             }
           }
         }

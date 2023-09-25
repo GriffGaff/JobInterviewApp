@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "333DnAPWwKjfwarj2dmCxFHy3V/em0yMvv6KlmIvHTUXk3IOX1y0Sn1SKsmKvCTlMODUyFlGcbIlgRVYTxV74w==",
+#<<<<<<< HEAD
+#  "dgSpecHash": "333DnAPWwKjfwarj2dmCxFHy3V/em0yMvv6KlmIvHTUXk3IOX1y0Sn1SKsmKvCTlMODUyFlGcbIlgRVYTxV74w==",
+#  "success": true,
+#  "projectFilePath": "c:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.tests\\project.tests.csproj",
+#=======
+  "dgSpecHash": "5T7dp+4+sLrCVBUHRG6m90naqKPtpvDSgGhR0gk2cGI9JYHUtUZ5TMkJmRh319ROsLYBC1ql2+LTIG6TGNfJmQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.tests\\project.tests.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Documents\\Works\\JobInterviewApp\\project\\project.tests\\project.tests.csproj",
+#>>>>>>> 9d3f9ed05bc0745f1900520a7e952678e17fdde0
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.codecoverage\\17.7.1\\microsoft.codecoverage.17.7.1.nupkg.sha512",
