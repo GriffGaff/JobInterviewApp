@@ -1,4 +1,4 @@
-﻿namespace ApplicationForm.DTO
+﻿/*namespace ApplicationForm.DTO
 {
     public class ApplicationDTO
     {
@@ -89,13 +89,6 @@
                     }
                     }
                 }
-                /*public class options
-                {
-                    public string Id { get; set; } //option1
-                    public string Text { get; set; } //displays first opt
-                }
-                public class question { get; set; }
-                public class choice { get; set; }*/
             }
         }
 
@@ -204,3 +197,4 @@
         }
     }
 }
+*/

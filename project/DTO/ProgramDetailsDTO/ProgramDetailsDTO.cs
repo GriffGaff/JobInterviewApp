@@ -12,21 +12,23 @@
         //additional Program Information
         public class ProgType
         {
-            public string selectedProgType { get; set; }
-            public List<string> progOptions { get; set; }//available options
+            public List<string> ProgOptions { get; set; }//available options
+            public string SelectedProgType { get; set; } //selected option
+
             public ProgType()
             {
-                progOptions = new List<string>
+                ProgOptions = new List<string>
                 {//few options for showcase
-                    "Internship"
-                    "Job"
-                    "Training"
-                    "Mentoring"
-                    "Course"
-                    "Live Seminar"
-                    "Volunteering"
+                    "Internship",
+                    "Job",
+                    "Training",
+                    "Mentoring",
+                    "Course",
+                    "Live Seminar",
+                    "Volunteering",
                     "Other"
                 };
+                SelectedProgType = string.Empty;
             }
         }
         public string ProgStart { get; set; }
@@ -36,19 +38,20 @@
         public string Location { get; set; }
         public class Qualification
         {
-            public string minQualification { get; set; }
-            public List<string> Options { get; set; }//available options
-            public minQualification()
+            public string SelectedQualification { get; set; }
+            public List<string> QualifyOptions { get; set; }//available options
+            public Qualification()
             {
-                Options = new List<string>
+                QualifyOptions = new List<string>
                 {//few options for showcase
-                    "High School"
-                    "College"
-                    "Graduate"
-                    "University"
-                    "Masters"
+                    "High School",
+                    "College",
+                    "Graduate",
+                    "University",
+                    "Masters",
                     "PhD"
                 };
+                SelectedQualification = string.Empty;
             }
         }
 
