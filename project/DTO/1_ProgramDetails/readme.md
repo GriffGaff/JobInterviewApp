@@ -1,1 +1,1 @@
-directory for first phase (program details)
+contents of the first phase of application process (program details)

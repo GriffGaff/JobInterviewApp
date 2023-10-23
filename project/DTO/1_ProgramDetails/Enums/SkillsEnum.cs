@@ -1,4 +1,4 @@
-namespace ProgramDetails.Structure;
+namespace ProgramDetails.Enums;
 
 public enum Skills
 {
