@@ -1,8 +1,9 @@
-namespace ApplicationForm.Enums;
-
-public enum workLocation
+namespace ApplicationForm.Enums
 {
-	Remote = 1,
-	Physical = 2,
-	Hybrid = 3
+	public enum workLocation
+	{
+		Remote = 1,
+		Physical = 2,
+		Hybrid = 3
+	}
 }
