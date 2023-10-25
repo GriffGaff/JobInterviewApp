@@ -1,1 +1,1 @@
-contents of the second phase of application process (applicatrion form)
+contents of the second phase of the application process (application form)
