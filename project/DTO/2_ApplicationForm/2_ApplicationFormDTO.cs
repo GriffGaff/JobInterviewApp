@@ -4,11 +4,7 @@ namespace ApplicationForm.DTO
 {
     public class ApplicationDTO
     {
-        public class CoverImg
-        {
-            public string FileName { get; set; } //  name of uploaded file
-            public byte[] FileData { get; set; } //  binary data 
-        }
+        public FileUpload.DTO.CoverImg CoverImg { get; set; }
 	public string firstName { get; set; }
 	public string lastName { get; set; }
 	public string email { get; set; }
